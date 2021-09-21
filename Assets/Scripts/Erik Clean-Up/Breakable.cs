@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
+using Controllers.Character;
+
 using UnityEngine;
 
 //Allows object to break after depleting its "health".

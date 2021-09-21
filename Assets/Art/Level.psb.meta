@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: b2c8342d935ccf24b9dcacced0db9011
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Walkway 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1012
+      width: 700
+      height: 150
+    spriteID: 57c71fb70be808141b2eaeb7e00115ee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1196, y: -113}
+  - name: Walkway 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 1012
+      width: 700
+      height: 150
+    spriteID: 853bcc792c11b754fab08f0d80758bcf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 212, y: -113}
+  - name: Ceiling 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1170
+      width: 700
+      height: 145
+    spriteID: 932ad41a7a80e6f4e8fed64e9d0da4af
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1896, y: 45}
+  - name: Ceiling 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 1170
+      width: 700
+      height: 145
+    spriteID: 85d1c631287fd29458cc6ba3e3a22f6e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1888, y: 45}
+  - name: LightFixture
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1420
+      y: 1170
+      width: 45
+      height: 100
+    spriteID: dce28cbf2970f9249b4317b803655802
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 920, y: -305}
+  - name: Box
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1420
+      y: 4
+      width: 200
+      height: 200
+    spriteID: 67277cf0238f2d14cb286ba7d83a8f32
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 861, y: -1371}
+  - name: Ground 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 700
+      height: 1000
+    spriteID: 41401f344f9b5854d92584445f58c2a9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -496, y: -109}
+  - name: Ground 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 4
+      width: 700
+      height: 1000
+    spriteID: d38a5f90c746e3e4bb7b2bb638647106
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -488, y: -109}
+  - name: Brightness/Contrast 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1631
+      y: 1229
+      width: 0
+      height: 0
+    spriteID: a159970f768c2b5449cecf22573a35e1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2209, y: -931}
+  - name: AlarmMount
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1680
+      y: 1170
+      width: 75
+      height: 20
+    spriteID: 8516c140f9c33f64489441f9b41814ab
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1323, y: -382}
+  - name: AlarmShadowOverlay
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1473
+      y: 1170
+      width: 71
+      height: 61
+    spriteID: 176ee47c83b6af445b2abe0a7bfe011e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1114, y: -322}
+  - name: AlarmInside
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1631
+      y: 1170
+      width: 41
+      height: 51
+    spriteID: eb2b940d8a793474fb12b9d446c6fc67
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1256, y: -334}
+  - name: AlarmBG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1552
+      y: 1170
+      width: 71
+      height: 61
+    spriteID: 70aebf06bd41a3b48be131a6fdcdd534
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1193, y: -322}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Walkway 2
+    spriteName: Walkway 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 57c71fb70be808141b2eaeb7e00115ee
+    layerID: 807
+    mosaicPosition: {x: 4, y: 1012}
+  - name: Walkway 1
+    spriteName: Walkway 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 853bcc792c11b754fab08f0d80758bcf
+    layerID: 805
+    mosaicPosition: {x: 712, y: 1012}
+  - name: Ceiling 1
+    spriteName: Ceiling 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 932ad41a7a80e6f4e8fed64e9d0da4af
+    layerID: 957
+    mosaicPosition: {x: 4, y: 1170}
+  - name: Ceiling 2
+    spriteName: Ceiling 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 85d1c631287fd29458cc6ba3e3a22f6e
+    layerID: 1069
+    mosaicPosition: {x: 712, y: 1170}
+  - name: LightFixture
+    spriteName: LightFixture
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dce28cbf2970f9249b4317b803655802
+    layerID: 1129
+    mosaicPosition: {x: 1420, y: 1170}
+  - name: Box
+    spriteName: Box
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 67277cf0238f2d14cb286ba7d83a8f32
+    layerID: 1160
+    mosaicPosition: {x: 1420, y: 4}
+  - name: Alarm
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 1234
+    mosaicPosition: {x: 0, y: 0}
+  - name: AlarmMount
+    spriteName: AlarmMount
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 8516c140f9c33f64489441f9b41814ab
+    layerID: 1233
+    mosaicPosition: {x: 1680, y: 1170}
+  - name: AlarmShadowOverlay
+    spriteName: AlarmShadowOverlay
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 176ee47c83b6af445b2abe0a7bfe011e
+    layerID: 1229
+    mosaicPosition: {x: 1473, y: 1170}
+  - name: AlarmInside
+    spriteName: AlarmInside
+    isGroup: 0
+    parentIndex: 6
+    spriteID: eb2b940d8a793474fb12b9d446c6fc67
+    layerID: 1228
+    mosaicPosition: {x: 1631, y: 1170}
+  - name: AlarmBG
+    spriteName: AlarmBG
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 70aebf06bd41a3b48be131a6fdcdd534
+    layerID: 1223
+    mosaicPosition: {x: 1552, y: 1170}
+  - name: Brightness/Contrast 1
+    spriteName: Brightness/Contrast 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a159970f768c2b5449cecf22573a35e1
+    layerID: 1203
+    mosaicPosition: {x: 1631, y: 1229}
+  - name: Ground 1
+    spriteName: Ground 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41401f344f9b5854d92584445f58c2a9
+    layerID: 1197
+    mosaicPosition: {x: 4, y: 4}
+  - name: Ground 2
+    spriteName: Ground 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d38a5f90c746e3e4bb7b2bb638647106
+    layerID: 1202
+    mosaicPosition: {x: 712, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Level Texture
+  prefabAssetName: Level Prefab
+  spriteLibAssetName: Level Sprite Lib
+  secondarySpriteTextures: []

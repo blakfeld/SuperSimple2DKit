@@ -16,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
+  - Environment
   - CameraBounds
   - Player
   - DialogueTrigger
@@ -26,8 +26,8 @@ TagManager:
   - Bombs
   - SoundTrigger
   - Post Processing
-  - 
-  - 
+  - Enemy
+  - UnlitDetails
   - 
   - 
   - 
@@ -58,6 +58,12 @@ TagManager:
     locked: 0
   - name: Layer1
     uniqueID: 3312312327
+    locked: 0
+  - name: Background1
+    uniqueID: 2258960583
+    locked: 0
+  - name: PlayArea
+    uniqueID: 716680873
     locked: 0
   - name: Player
     uniqueID: 3769207007

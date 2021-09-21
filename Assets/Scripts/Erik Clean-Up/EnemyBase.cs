@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
+using Controllers.Character;
+
 using UnityEngine;
 
 /*The core functionality of both the EnemyFlyer and the EnemyWalker*/

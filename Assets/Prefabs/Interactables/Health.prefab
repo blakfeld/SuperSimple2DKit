@@ -52,10 +52,11 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,13 +127,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
+  audioSource: {fileID: 0}
+  bounceSound: {fileID: 0}
   collectSounds:
   - {fileID: 8300000, guid: a1b19d887af0d4e2581dfdc54bbb8402, type: 3}
-  bounceSound: {fileID: 0}
-  audioSource: {fileID: 0}
-  itemName: 
   itemAmount: 1
-  image: {fileID: 21300002, guid: 07c70ed64166845b9a8ed97fa2914412, type: 3}
+  itemName: 
+  UIImage: {fileID: 0}
 --- !u!82 &82283241042493200
 AudioSource:
   m_ObjectHideFlags: 0
@@ -344,10 +345,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00585e398033247af958235b57925db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceSound: {fileID: 8300000, guid: 697b854cdabec4c698c51e07ecf440bc, type: 3}
   audioSource: {fileID: 82535479044792032}
-  launchOnStart: 0
+  bounceSound: {fileID: 8300000, guid: 697b854cdabec4c698c51e07ecf440bc, type: 3}
   collectableTrigger: {fileID: 61602777346946254}
+  launchOnStart: 0
 --- !u!82 &82535479044792032
 AudioSource:
   m_ObjectHideFlags: 0
@@ -510,10 +511,11 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -605,10 +607,11 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
