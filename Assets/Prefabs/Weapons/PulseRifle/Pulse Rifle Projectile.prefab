@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290507388718106697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.35, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 2.052, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 120816181520733990}
   m_Father: {fileID: 6840761560796101986}
@@ -351,7 +351,7 @@ PrefabInstance:
     - target: {fileID: 2469970177019892059, guid: 19d3d269c7f2c1e4faf479a814afc2c1,
         type: 3}
       propertyPath: needUpdate
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2469970177019892059, guid: 19d3d269c7f2c1e4faf479a814afc2c1,
         type: 3}
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 2469970177019892059, guid: 19d3d269c7f2c1e4faf479a814afc2c1,
         type: 3}
       propertyPath: ContactFilter.layerMask.m_Bits
-      value: 524087
+      value: 515895
       objectReference: {fileID: 0}
     - target: {fileID: 5568550500296993298, guid: 19d3d269c7f2c1e4faf479a814afc2c1,
         type: 3}

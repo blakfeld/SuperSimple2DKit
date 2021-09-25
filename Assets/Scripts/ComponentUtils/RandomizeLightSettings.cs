@@ -1,27 +1,25 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
-using UnityEngine.Serialization;
 
 namespace ComponentUtils {
     public class RandomizeLightSettings : MonoBehaviour {
-        public HardLight2D targetHardLight;
-
-        [Header("Range")]
-        public int minRange = 3;
-
-        public int maxRange = 5;
+        [Header("References")]
+        [SerializeField]
+        private HardLight2D targetHardLight;
+        
+        [Header("Range")] [SerializeField] private int minRange = 3;
+        [SerializeField] private int maxRange = 5;
 
         [Header("Intensity")]
         [Range(0, 100)]
-        public int minIntensity = 75;
+        [SerializeField]
+        private int minIntensity = 75;
 
-        [Range(0, 100)]
-        public int maxIntensity = 100;
+        [Range(0, 100)] [SerializeField] private int maxIntensity = 100;
 
-        [Header("Colors")]
-        public Color[] colorOptions;
+        [Header("Colors")] [SerializeField] private Color[] colorOptions;
 
-        private void Start() {
+
+        private void Awake() {
             var range = Random.Range(minRange, maxRange);
             targetHardLight.Range = range;
 
@@ -31,6 +29,7 @@ namespace ComponentUtils {
             var color = ChooseColor();
             targetHardLight.Color = color;
         }
+
 
         private Color ChooseColor() {
             var colorIndex = Random.Range(0, colorOptions.Length);

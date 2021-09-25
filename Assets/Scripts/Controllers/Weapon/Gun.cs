@@ -33,7 +33,7 @@ namespace Controllers.Weapon {
 
         private void Start() {
             _impulseSource = GetComponent<CinemachineImpulseSource>();
-            if (_impulseSource == null && cameraShakeEnabled) {
+            if (!_impulseSource && cameraShakeEnabled) {
                 Debug.LogError("Gun required a CinemachineImpulseSource component for Camera shake.");
             }
         }

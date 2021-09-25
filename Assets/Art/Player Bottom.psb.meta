@@ -1,0 +1,469 @@
+fileFormatVersion: 2
+guid: 4f4df7e2ded613449a85d0f5c2fb1c37
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: 3/4 Front Upper Left Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 159
+      height: 349
+    spriteID: c790b4eef74b89446b1f55c2295578c7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -831, y: -696}
+  - name: 3/4 Front Left Foot Toe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 415
+      y: 238
+      width: 74
+      height: 32
+    spriteID: 4bff1d795f9aa634fbeee16fbf0ca3fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -558, y: -30}
+  - name: 3/4 Front Left Foot Base
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 406
+      width: 171
+      height: 94
+    spriteID: 15f51386eb7b2e9468af68460fcbe455
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -530, y: 138}
+  - name: 3/4 Front Left Knee
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 718
+      width: 105
+      height: 160
+    spriteID: 2cd3b7f974c140d42876a39dc9724e38
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -832, y: 104}
+  - name: 3/4 Front Left Lower Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 238
+      width: 123
+      height: 385
+    spriteID: 48fd40d0395f9a24487897a9df1a222b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -629, y: -53}
+  - name: 3/4 Front Crotch
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 4
+      width: 242
+      height: 226
+    spriteID: 6ef7f19bf6dce164cac513696835a580
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -670, y: -941}
+  - name: 3/4 Front Right Upper Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 361
+      width: 159
+      height: 349
+    spriteID: 3fd9258d31344cf4e83cd1498799db44
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -917, y: -339}
+  - name: 3/4 Front Right Foot Toe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 415
+      y: 278
+      width: 74
+      height: 32
+    spriteID: 1c31e1031804632479b300b0e87e0e58
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -644, y: 10}
+  - name: 3/4 Front Right Foot Base
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 508
+      width: 171
+      height: 94
+    spriteID: 77c5dcdd505d74a429aa06f6ba4de6cc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -616, y: 240}
+  - name: 3/4 Front Right Knee
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 238
+      width: 105
+      height: 160
+    spriteID: 75e058bb9fdc98d4d93a4f8e837d68fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -620, y: -376}
+  - name: 3/4 Front Right Lower Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 631
+      width: 123
+      height: 385
+    spriteID: 0ef95c724666faf45a4688b994b5fc7a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -715, y: 340}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
+  documentSize: {x: 2000, y: 2000}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: 3/4 Front
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 178
+    mosaicPosition: {x: 0, y: 0}
+  - name: Bottom Sprite
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 179
+    mosaicPosition: {x: 0, y: 0}
+  - name: 3/4 Front Left Leg
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 00000000000000000000000000000000
+    layerID: 172
+    mosaicPosition: {x: 0, y: 0}
+  - name: 3/4 Front Upper Left Leg
+    spriteName: 3/4 Front Upper Left Leg
+    isGroup: 0
+    parentIndex: 2
+    spriteID: c790b4eef74b89446b1f55c2295578c7
+    layerID: 171
+    mosaicPosition: {x: 4, y: 4}
+  - name: 3/4 Front Left Foot Toe
+    spriteName: 3/4 Front Left Foot Toe
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 4bff1d795f9aa634fbeee16fbf0ca3fb
+    layerID: 170
+    mosaicPosition: {x: 415, y: 238}
+  - name: 3/4 Front Left Foot Base
+    spriteName: 3/4 Front Left Foot Base
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 15f51386eb7b2e9468af68460fcbe455
+    layerID: 169
+    mosaicPosition: {x: 302, y: 406}
+  - name: 3/4 Front Left Knee
+    spriteName: 3/4 Front Left Knee
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 2cd3b7f974c140d42876a39dc9724e38
+    layerID: 168
+    mosaicPosition: {x: 4, y: 718}
+  - name: 3/4 Front Left Lower Leg
+    spriteName: 3/4 Front Left Lower Leg
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 48fd40d0395f9a24487897a9df1a222b
+    layerID: 167
+    mosaicPosition: {x: 171, y: 238}
+  - name: 3/4 Front Crotch
+    spriteName: 3/4 Front Crotch
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 6ef7f19bf6dce164cac513696835a580
+    layerID: 152
+    mosaicPosition: {x: 171, y: 4}
+  - name: 3/4 Front Leg
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 00000000000000000000000000000000
+    layerID: 150
+    mosaicPosition: {x: 0, y: 0}
+  - name: 3/4 Front Right Upper Leg
+    spriteName: 3/4 Front Right Upper Leg
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 3fd9258d31344cf4e83cd1498799db44
+    layerID: 149
+    mosaicPosition: {x: 4, y: 361}
+  - name: 3/4 Front Right Foot Toe
+    spriteName: 3/4 Front Right Foot Toe
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 1c31e1031804632479b300b0e87e0e58
+    layerID: 148
+    mosaicPosition: {x: 415, y: 278}
+  - name: 3/4 Front Right Foot Base
+    spriteName: 3/4 Front Right Foot Base
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 77c5dcdd505d74a429aa06f6ba4de6cc
+    layerID: 147
+    mosaicPosition: {x: 302, y: 508}
+  - name: 3/4 Front Right Knee
+    spriteName: 3/4 Front Right Knee
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 75e058bb9fdc98d4d93a4f8e837d68fb
+    layerID: 146
+    mosaicPosition: {x: 302, y: 238}
+  - name: 3/4 Front Right Lower Leg
+    spriteName: 3/4 Front Right Lower Leg
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 0ef95c724666faf45a4688b994b5fc7a
+    layerID: 145
+    mosaicPosition: {x: 171, y: 631}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Player Bottom Texture
+  prefabAssetName: Player Bottom Prefab
+  spriteLibAssetName: Player Bottom Sprite Lib
+  secondarySpriteTextures: []

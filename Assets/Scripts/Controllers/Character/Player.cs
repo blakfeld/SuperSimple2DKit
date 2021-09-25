@@ -16,6 +16,18 @@ namespace Controllers.Character {
         private GunManager _gunManager;
 
 
+        private static Player _instance;
+
+        public static Player Instance {
+            get {
+                if (_instance == null) {
+                    _instance = FindObjectOfType<Player>();
+                }
+
+                return _instance;
+            }
+        }
+
         protected override void Start() {
             base.Start();
 
@@ -31,23 +43,23 @@ namespace Controllers.Character {
         }
 
 
-        private void CheckIsGrounded() {
+        private void ApplyFallForgiveness() {
             if (!grounded) {
                 var shouldForgiveFall = _fallForgivenessCounter < fallForgiveness && isJumping;
                 if (shouldForgiveFall) {
                     _fallForgivenessCounter += Time.deltaTime;
-                } else {
-                    animator.SetBool(Grounded, false);
+                } else if (_animator) {
+                    _animator.SetBool(Grounded, false);
                 }
             } else {
                 _fallForgivenessCounter = 0;
-                animator.SetBool(Grounded, true);
+                if (_animator) _animator.SetBool(Grounded, true);
             }
         }
 
 
         private void HandleMoveInput() {
-            CheckIsGrounded();
+            ApplyFallForgiveness();
             Move(Input.GetAxis("Horizontal"));
             if (Input.GetButtonDown("Jump")) {
                 Jump();

@@ -17,22 +17,19 @@ using Random = UnityEngine.Random;
 
 namespace Controllers.Character {
     public class BaseCharacter : PhysicsObject {
-        [Header("References")]
-        [SerializeField]
-        protected Animator animator;
-
         [Header("Health")] [SerializeField] private int health = 100;
         [SerializeField] private int maxHealth = 100;
 
         [Header("Movement")] [SerializeField] private float speed = 7;
         [SerializeField] private float jumpPower = 17;
         [SerializeField] private float impulseRecovery = 3;
-        private float _impulse;
+        public float impulse;
 
         [Header("Audio")] [SerializeField] private bool playFootStepSound = true;
         [SerializeField] private AudioClip[] footStepClips;
         [SerializeField] private float footStepVolume = 0.1f;
 
+        protected Animator _animator;
         private AudioHelper _audioHelper;
 
         private static readonly int VelocityX = Animator.StringToHash("velocityX");
@@ -49,15 +46,19 @@ namespace Controllers.Character {
         protected virtual void Start() {
             var audioSource = GetComponent<AudioSource>();
             _audioHelper = new AudioHelper(audioSource);
+
+            _animator = GetComponent<Animator>();
         }
 
 
         protected virtual void Update() {
-            if (isMoving) {
-                var moveDir = isFacingRight ? 1 : -1;
-                animator.SetInteger(MoveDirection, moveDir);
-            } else {
-                animator.SetInteger(MoveDirection, 0);
+            if (_animator) {
+                var moveDir = 0;
+                if (isMoving) {
+                    moveDir = isFacingRight ? 1 : -1;
+                }
+
+                _animator.SetInteger(MoveDirection, moveDir);
             }
 
             FlipSprite();
@@ -84,15 +85,17 @@ namespace Controllers.Character {
         }
 
 
-        protected void Move(float horizontalAxis) {
+        public void Move(float horizontalAxis) {
             isMoving = horizontalAxis != 0;
 
-            _impulse += (0 - _impulse) * Time.deltaTime * impulseRecovery;
-            var xVel = horizontalAxis + _impulse;
+            impulse += (0 - impulse) * Time.deltaTime * impulseRecovery;
+            var xVel = horizontalAxis + impulse;
             targetVelocity = new Vector2(xVel, 0) * speed;
 
-            animator.SetFloat(VelocityX, Mathf.Abs(velocity.x) / speed);
-            animator.SetFloat(VelocityY, velocity.y);
+            if (_animator) {
+                // _animator.SetFloat(VelocityX, Mathf.Abs(velocity.x) / speed);
+                // _animator.SetFloat(VelocityY, velocity.y);
+            }
         }
 
 
