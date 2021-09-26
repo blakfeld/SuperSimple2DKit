@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+
+using Controllers.Weapon;
 
 using UnityEditor;
 
@@ -10,6 +13,7 @@ namespace Controllers.Character.Enemy {
         Alerted,
         Attacking,
         Idle,
+        Paused,
         Suspicious
     }
 
@@ -33,16 +37,32 @@ namespace Controllers.Character.Enemy {
         private float _alertTimer;
         private float _suspicionTimer;
 
+        [Header("Effects")] [SerializeField] private GameObject bulletImpact;
+        [SerializeField] private float projectileKnockBack;
+        [SerializeField] private float hitCooldown;
+
         [Header("State")] public EnemyState state = EnemyState.Idle;
 
+        private Rigidbody2D _rigidbody2D;
 
         private static readonly IReadOnlyDictionary<EnemyState, EnemyState[]> _validStateTransitions =
             new Dictionary<EnemyState, EnemyState[]> {
-                {EnemyState.Alerted, new[] {EnemyState.Attacking, EnemyState.Idle, EnemyState.Suspicious}},
-                {EnemyState.Attacking, new[] {EnemyState.Alerted, EnemyState.Suspicious}},
-                {EnemyState.Idle, new[] {EnemyState.Alerted, EnemyState.Suspicious}},
-                {EnemyState.Suspicious, new[] {EnemyState.Alerted, EnemyState.Idle}},
+                {
+                    EnemyState.Alerted,
+                    new[] {EnemyState.Attacking, EnemyState.Idle, EnemyState.Paused, EnemyState.Suspicious}
+                },
+                {EnemyState.Attacking, new[] {EnemyState.Alerted, EnemyState.Paused, EnemyState.Suspicious}},
+                {EnemyState.Idle, new[] {EnemyState.Alerted, EnemyState.Paused, EnemyState.Suspicious}}, {
+                    EnemyState.Paused,
+                    new[] {EnemyState.Alerted, EnemyState.Attacking, EnemyState.Idle, EnemyState.Suspicious}
+                },
+                {EnemyState.Suspicious, new[] {EnemyState.Alerted, EnemyState.Idle, EnemyState.Paused}},
             };
+
+
+        public void Start() {
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+        }
 
 
         private void OnDrawGizmosSelected() {
@@ -55,6 +75,7 @@ namespace Controllers.Character.Enemy {
         protected override void Update() {
             base.Update();
 
+            if (state == EnemyState.Paused) return;
             if (_alertTimer > 0) _alertTimer -= Time.deltaTime;
             if (_suspicionTimer > 0) _suspicionTimer -= Time.deltaTime;
 
@@ -107,6 +128,36 @@ namespace Controllers.Character.Enemy {
             if (!_validStateTransitions[state].Contains(newState)) return false;
             state = newState;
             return true;
+        }
+
+
+        public void HitByProjectile(HitByProjectileMessage msg) {
+            var damageToTake = msg.Damage;
+            Damage(damageToTake);
+            StartCoroutine(HitCooldown());
+
+            if (!bulletImpact || bulletImpact == null) return;
+
+            var hit = msg.Hit;
+            var rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
+            rotation *= Quaternion.Euler(0, 0, -90);
+
+            Instantiate(bulletImpact, hit.point, rotation);
+
+            var force = new Vector2(-hit.normal.x, 0.0f) * projectileKnockBack;
+            _rigidbody2D.AddForce(force);
+        }
+
+
+        private IEnumerator HitCooldown() {
+            if (state == EnemyState.Paused) yield break;
+
+            var prevState = state;
+            Debug.Log(RequestStateTransition(EnemyState.Paused));
+
+            yield return new WaitForSeconds(hitCooldown);
+
+            RequestStateTransition(prevState);
         }
     }
 }

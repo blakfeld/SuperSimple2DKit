@@ -47,7 +47,17 @@ PrefabInstance:
     - target: {fileID: 1954787377965943258, guid: 8302b575c25ca1e448517f07fb5bfa5c,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -2
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954787377965943258, guid: 8302b575c25ca1e448517f07fb5bfa5c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954787377965943258, guid: 8302b575c25ca1e448517f07fb5bfa5c,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2036006713
       objectReference: {fileID: 0}
     - target: {fileID: 1954787377965943269, guid: 8302b575c25ca1e448517f07fb5bfa5c,
         type: 3}
@@ -179,6 +189,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1467319729196550670, guid: f193e93eb594a6d45ab04784a29fb858,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467319729196550670, guid: f193e93eb594a6d45ab04784a29fb858,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2036006713
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467319729196550670, guid: f193e93eb594a6d45ab04784a29fb858,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9735fb398ffb8304ba94a1f8387ea29c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f193e93eb594a6d45ab04784a29fb858, type: 3}
 --- !u!4 &5215084573112315205 stripped

@@ -9,18 +9,18 @@ namespace ComponentUtils {
         private readonly Random _random = new Random();
 
         public void Start() {
-            var spriteIndex = _random.Next(0, sprites.Length);
-            var sprite = sprites[spriteIndex];
-
-            spriteRenderer.sprite = sprite;
+            ApplyRandomSprite();
         }
 
         public void OnDrawGizmos() {
             if (spriteRenderer.sprite != null) return;
+            ApplyRandomSprite();
+        }
 
+
+        public void ApplyRandomSprite() {
             var spriteIndex = _random.Next(0, sprites.Length);
             var sprite = sprites[spriteIndex];
-
             spriteRenderer.sprite = sprite;
         }
     }

@@ -29,6 +29,8 @@ namespace Controllers.Character {
         [SerializeField] private AudioClip[] footStepClips;
         [SerializeField] private float footStepVolume = 0.1f;
 
+        [Header("Effects")] [SerializeField] private GameObject deathEffect;
+
         protected Animator _animator;
         private AudioHelper _audioHelper;
 
@@ -36,7 +38,7 @@ namespace Controllers.Character {
         private static readonly int VelocityY = Animator.StringToHash("velocityY");
         private static readonly int MoveDirection = Animator.StringToHash("moveDirection");
 
-        public bool isFacingRight = true;
+        [Header("State")] public bool isFacingRight = true;
         public bool isJumping;
         public bool isMoving;
 
@@ -52,6 +54,8 @@ namespace Controllers.Character {
 
 
         protected virtual void Update() {
+            if (health <= 0) Die();
+
             if (_animator) {
                 var moveDir = 0;
                 if (isMoving) {
@@ -66,6 +70,10 @@ namespace Controllers.Character {
 
 
         protected void Die() {
+            if (deathEffect != null) {
+                Instantiate(deathEffect, transform.position, transform.rotation);
+            }
+
             Destroy(gameObject);
         }
 

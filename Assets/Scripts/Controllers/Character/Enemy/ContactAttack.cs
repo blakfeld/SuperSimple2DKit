@@ -68,7 +68,7 @@ namespace Controllers.Character.Enemy {
         private IEnumerator TransitionToExitState() {
             yield return new WaitForSeconds(0.5f);
 
-            _enemy.RequestStateTransition(EnemyState.Alerted);
+            _enemy.RequestStateTransition(exitState);
         }
     }
 }

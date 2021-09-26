@@ -24,7 +24,10 @@ namespace Controllers.Character.Enemy {
 
         private void Update() {
             if (!subscribedStates.Contains(_enemy.state)) {
-                isPursuing = false;
+                if (isPursuing) {
+                    _enemy.Move(0);
+                    isPursuing = false;
+                }
                 return;
             }
 

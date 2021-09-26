@@ -50,14 +50,10 @@ namespace Controllers.Weapon {
             if (_fireRateTimer > 0f) return;
             isFiring = true;
 
-            Instantiate(projectile, projectileSpawn);
-            projectileSpawn.DetachChildren();
+            // Instantiate(projectile, projectileSpawn);
+            // projectileSpawn.DetachChildren();
 
             _fireRateTimer = fireRate;
-            if (cameraShakeEnabled && _impulseSource) {
-                _impulseSource.GenerateImpulse();
-            }
-
             OnShoot?.Invoke();
         }
 

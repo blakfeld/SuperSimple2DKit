@@ -99,6 +99,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1467319729196550670, guid: f193e93eb594a6d45ab04784a29fb858,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467319729196550670, guid: f193e93eb594a6d45ab04784a29fb858,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2036006713
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f193e93eb594a6d45ab04784a29fb858, type: 3}
 --- !u!4 &153831394743086205 stripped
@@ -118,6 +128,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954787377965943258, guid: 8302b575c25ca1e448517f07fb5bfa5c,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954787377965943258, guid: 8302b575c25ca1e448517f07fb5bfa5c,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2036006713
       objectReference: {fileID: 0}
     - target: {fileID: 1954787377965943269, guid: 8302b575c25ca1e448517f07fb5bfa5c,
         type: 3}
